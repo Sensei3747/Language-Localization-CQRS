@@ -23,7 +23,7 @@ public class Thought
         Language = language;
     }
 
-    public Thought Create(string content, long userId, Types type, Language language)
+    public static Thought Create(string content, long userId, Types type, Language language)
     {
         return new Thought(content, userId, type, language);
     }

@@ -4,6 +4,8 @@ using ThoughtApp.Domain.Languages;
 using ThoughtApp.Domain.Type;
 using ThoughtApp.Infrastructure.Data;
 
+namespace ThoughtApp.Infrastructure.Repositories;
+
 public class ThoughtRepository : IThoughtRepository
 {
     private readonly ApplicationDbContext _context;

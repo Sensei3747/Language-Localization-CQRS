@@ -170,3 +170,4 @@ C:\Users\user\Desktop\Lang\ThoughtApp\bin\Debug\net9.0\FluentValidation.Dependen
 C:\Users\user\Desktop\Lang\ThoughtApp\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\user\Desktop\Lang\ThoughtApp\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\user\Desktop\Lang\ThoughtApp\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\user\Desktop\Lang\ThoughtApp\obj\Debug\net9.0\ThoughtApp.sourcelink.json

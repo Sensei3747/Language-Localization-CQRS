@@ -36,7 +36,7 @@ public class ThoughtsController : ControllerBase
         return Ok(result.Value);
     }
 
-    [HttpGet("get/thoughtuser")]
+    [HttpPost("get/thoughtuser")]
     public async Task<IActionResult> GetThoughtUser(string name)
     {
         var query = new GetThoughtsByUserIdQuery(name);
@@ -48,7 +48,7 @@ public class ThoughtsController : ControllerBase
         return Ok(result.Value);
     }
 
-    [HttpGet("get/thoughtType")]
+    [HttpPost("get/thoughtType")]
     public async Task<IActionResult> GetThoughtType(string name, Types type)
     {
         var query = new GetThoughtsByTypeQuery(name, type);
@@ -60,7 +60,7 @@ public class ThoughtsController : ControllerBase
         return Ok(result.Value);
     }
 
-    [HttpGet("get/thoughtLanguage")]
+    [HttpPost("get/thoughtLanguage")]
     public async Task<IActionResult> GetThoughtLanguage(string name, Language language)
     {
         var query = new GetThoughtsByLanguageQuery(name, language);

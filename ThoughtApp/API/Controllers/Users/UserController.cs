@@ -34,7 +34,7 @@ public class UserController : ControllerBase
     }
 
     [AllowAnonymous]
-    [HttpGet("login")]
+    [HttpPost("login")]
     public async Task<IActionResult> Login(LoginRequest request)
     {
         var query = new LoginUserQuery(request.name, request.password);

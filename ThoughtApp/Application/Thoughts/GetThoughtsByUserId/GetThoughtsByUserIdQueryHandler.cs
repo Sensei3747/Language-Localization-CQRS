@@ -18,7 +18,7 @@ public class GetThoughtsByUserIdQueryHandler : IQueryHandler<GetThoughtsByUserId
 
     public async Task<Result<List<Thought?>>> Handle(GetThoughtsByUserIdQuery request, CancellationToken token)
     {
-        var user = _userRepository.GetByName(request.name);
+        var user = await _userRepository.GetByName(request.name);
         if (user is null)
         {
             return Result.Failure<List<Thought?>>(Error.NotFound("Not Found", "User not Found."));
